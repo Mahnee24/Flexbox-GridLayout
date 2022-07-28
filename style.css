@@ -1,0 +1,184 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    background-color: rgb(248, 245, 245);
+}
+main{
+    margin-top: 150px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 100px auto;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.container .left-container{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    width: 100%;
+}
+.container .middle-container{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+    width: 100%;
+}
+.container .right-container{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    width: 100%;
+}
+.left-container h3{
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+}
+.left-container p{
+    color: hsl(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    height: 100px;
+    margin-bottom: 70px;
+}
+.left-container button{
+    margin-top: 10px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    border-radius: 50px;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    padding: 10px;
+    width: 120px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.left-container button:hover{
+    background-color: transparent;
+    color:white;
+}
+.middle-container h3{
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 15px;
+    font-size: bold;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+}
+.middle-container p{
+    color: hsl(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    margin-bottom: 70px;
+    height: 100px;
+}
+.middle-container button{
+    width: 120px;
+    margin-top: 10px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    border-radius: 50px;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    padding: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.middle-container button:hover{
+    background-color: transparent;
+    color:white;
+}
+.right-container h3{
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 15px;
+    font-size: bold;
+    font-weight: 700;
+    font-family: 'Big shoulders Display';
+}
+.right-container p{
+    color: hsl(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    margin-bottom: 70px;
+    height: 100px;
+}
+.right-container button{
+    width: 120px;
+    margin-top: 10px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    border-radius: 50px;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    padding: 10px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.right-container button:hover{
+    background-color: transparent;
+    color:white;
+}
+header a{
+    color: black;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+@media (min-width: 1520px) {
+    .container{
+        width: 50%;
+    }
+}
+
+@media(max-width: 1160px) {
+    .container{
+        width: 70%
+    }
+
+}
+
+@media (max-width: 960px) {
+    .container{
+        width: 80%
+    }
+}
+
+@media (max-width: 650px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-container,
+    .middle-container,
+    .right-container {
+        width: 100%;
+    }
+
+    .left-container p,
+    .middle-container p,
+    .right-container p {
+        height: 70px;
+        margin-bottom: 15px;
+    }
+}
